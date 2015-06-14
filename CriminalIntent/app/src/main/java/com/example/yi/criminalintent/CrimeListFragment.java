@@ -2,6 +2,7 @@ package com.example.yi.criminalintent;
 
 import android.app.Activity;
 import android.app.ListFragment;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -27,8 +28,6 @@ public class CrimeListFragment extends ListFragment {
         getActivity().setTitle(R.string.crime_title);
         mCrimes = CrimeLab.get(getActivity()).getCrimes();
 
-        //ArrayAdapter<Crime> adapter = new ArrayAdapter<Crime>(getActivity(), android.R.layout.simple_list_item_1,mCrimes);
-
         ArrayAdapter<Crime> adapter = new CrimeAdapter(mCrimes);
         setListAdapter(adapter);
     }
@@ -37,6 +36,16 @@ public class CrimeListFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id){
         Crime c = ((CrimeAdapter)getListAdapter()).getItem(position);
         Log.d(Tag, c.getTitle() + " was clicked.");
+        //Start CrimeActivity
+        Intent i = new Intent(getActivity(), CrimeActivity.class);
+        i.putExtra(CrimeFragment.EXTRA_CRIME_ID, c.getId());
+        startActivity(i);
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        ((CrimeAdapter)getListAdapter()).notifyDataSetChanged();
     }
 
     private class CrimeAdapter extends ArrayAdapter<Crime>{
