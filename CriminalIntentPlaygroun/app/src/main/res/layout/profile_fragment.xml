@@ -1,0 +1,104 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:paddingTop="16dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/profile_picture"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yi Li"
+            android:textSize="48sp"
+            android:paddingTop="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Microsoft"
+            android:textSize="16sp"
+            android:paddingLeft="16dp"/>
+    </LinearLayout>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yiil@microsoft.com"
+        android:textSize="24sp"
+        android:paddingTop="0dp"
+        android:paddingLeft="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(607)759-7230"
+        android:textSize="24sp"
+        android:paddingTop="0dp"
+        android:paddingLeft="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Office Location"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Building 2 - 2139"
+        android:textSize="24sp"
+        android:paddingTop="0dp"
+        android:paddingLeft="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dmitry Pugachev"
+        android:textSize="24sp"
+        android:paddingTop="0dp"
+        android:paddingLeft="16dp"
+        />
+</LinearLayout>
