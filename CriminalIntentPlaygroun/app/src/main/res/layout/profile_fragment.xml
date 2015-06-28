@@ -89,6 +89,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Job Title"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software Engineer"
+        android:textSize="24sp"
+        android:paddingTop="0dp"
+        android:paddingLeft="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Manager"
         android:textSize="16sp"
         android:paddingLeft="16dp"
