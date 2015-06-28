@@ -44,6 +44,9 @@ public class ProfileListFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id){
         Profile profile = ((ProfileAdapter)getListAdapter()).getItem(position);
         Log.d(Tag, profile.name + " was clicked.");
+
+        Intent i = new Intent(getActivity(), ProfileActivity.class);
+        startActivity(i);
         //Start CrimeActivity
         /*
         Intent i = new Intent(getActivity(), CrimeActivity.class);
