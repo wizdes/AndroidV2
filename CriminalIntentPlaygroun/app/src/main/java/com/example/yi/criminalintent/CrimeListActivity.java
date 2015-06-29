@@ -1,6 +1,6 @@
 package com.example.yi.criminalintent;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -10,7 +10,7 @@ import android.view.MenuItem;
 public class CrimeListActivity extends SingleFragmentActivity {
     @Override
     protected Fragment createFragment() {
-        return new ProfileListFragment();
+        return new CrimeListFragment();
     }
 
     @Override
