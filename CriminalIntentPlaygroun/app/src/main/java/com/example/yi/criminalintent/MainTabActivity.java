@@ -1,12 +1,14 @@
 package com.example.yi.criminalintent;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toolbar;
 
 /**
  * Created by Yi on 7/11/2015.
@@ -17,6 +19,7 @@ public class MainTabActivity extends ActionBarActivity {
     ViewPagerAdapter adapter;
     SlidingTabLayout tabs;
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +27,7 @@ public class MainTabActivity extends ActionBarActivity {
 
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
 
-        //setSupportActionBar(toolbar);
+        setActionBar(toolbar);
 
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
