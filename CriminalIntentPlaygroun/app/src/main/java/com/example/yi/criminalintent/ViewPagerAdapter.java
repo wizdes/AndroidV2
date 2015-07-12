@@ -14,7 +14,12 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new ProfileFragment();
+        if(position == 0){
+            return new ProfileFragment();
+        }
+        else{
+            return new ProfileListFragment();
+        }
     }
 
     @Override
